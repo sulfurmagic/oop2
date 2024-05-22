@@ -1,13 +1,13 @@
 public class Radio {
     public int currentRadioStation;
-   public int currentSoundLevel;
+    public int currentSoundLevel;
 
-    public int getCurrentRadioStation(){
+    public int getCurrentRadioStation() {
         return currentRadioStation;
     }
 
-    public void setCurrentRadioStation(int newCurrentRadioStation){
-        if (newCurrentRadioStation > 9){
+    public void setCurrentRadioStation(int newCurrentRadioStation) {
+        if (newCurrentRadioStation > 9) {
             return;
         }
         if (newCurrentRadioStation < 0) {
@@ -23,6 +23,7 @@ public class Radio {
             currentRadioStation = currentRadioStation + 1;
         }
     }
+
     public void previousStation() {
         if (currentRadioStation <= 0) {
             currentRadioStation = 9;
@@ -31,12 +32,12 @@ public class Radio {
         }
     }
 
-    public int getCurrentSoundLevel(){
+    public int getCurrentSoundLevel() {
         return currentSoundLevel;
     }
 
-    public void setCurrentSoundLevel(int newCurrentSoundLevel){
-        if (newCurrentSoundLevel > 100){
+    public void setCurrentSoundLevel(int newCurrentSoundLevel) {
+        if (newCurrentSoundLevel > 100) {
             return;
         }
         if (newCurrentSoundLevel < 0) {
@@ -44,7 +45,6 @@ public class Radio {
         }
         currentSoundLevel = newCurrentSoundLevel;
     }
-
 
 
     public void higherSound() {
